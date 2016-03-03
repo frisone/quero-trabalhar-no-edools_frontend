@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+ font-family: "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-weight: normal;
+}
+
+ul { list-style: none; }
+li { border-bottom: 1px solid #eee; padding: .5em}
+
+.avatar-user{ border-radius: 100%;}

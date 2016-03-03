@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <!-- Include the AngularJS library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script> -->
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+</head>
+  <body ng-app="RepositoryApp">
+
+    <div class="main" ng-controller="MainController">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>List Issues</h1>
+            <ul class="" ng-repeat="repo in repository">
+              <li>
+                <img src="{{ repo.owner.avatar_url }}" width="20" height="20" alt="" />
+                <a href="{{ repo.url }}">{{repo.full_name}}</a>
+                <a href="#" class="btn" ng-click="getIssues($index)">issues</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul ng-repeat="item in outros">
+              <li>{{item}}</li>
+            </ul>
+          </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/repository.js"></script>
+
+    <!-- Directives -->
+
+
+  </body>
+</html>
